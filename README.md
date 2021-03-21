@@ -5,7 +5,7 @@ Este es un loguin simple creado con php aplicando clases y realizado de forma re
 Requerimientos para que funcione en su propia máquina:
 --Correr el script ubicado en la carpeta assets/DataBase.
 --Conectarse a su localhost.
---Cambiar los datos del host, username y contraseña en el archivo db.clase.php.
+--Cambiar los datos del host, username y contraseña en el archivo db.clase.php. <br>
 Print Loguin:
 ![print loguin](https://user-images.githubusercontent.com/74624803/111911726-7a0d4a80-8a45-11eb-90ae-2f8922fbd9e6.jpg)
 Print Registro:
