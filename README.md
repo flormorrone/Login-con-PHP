@@ -1,6 +1,6 @@
 # Login-con-PHP
 
-Este es un loguin simple creado con php aplicando clses y realizado de forma responsive. 
+Este es un loguin simple creado con php aplicando clases y realizado de forma responsive. 
 
 Requerimientos para que funcione en su propia máquina:
 --Correr el script ubicado en la carpeta assets/DataBase.
