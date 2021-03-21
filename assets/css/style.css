@@ -1,0 +1,166 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+:root {
+    --bg-input: rgb(243, 241, 224);
+    --bg-black: rgb(24, 24, 24);
+    --bg-light: rgb(240, 240, 240);
+    --bg-light70: rgba(240, 240, 240, 0.705);
+}
+
+html {
+    position: relative;
+    min-height: 100vh;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    text-align: center;
+    min-height: 100vh;
+    position: relative;
+}
+
+.banner::after,
+.banner::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: skew(15deg) translateX(-50%);
+    width: 75%;
+    height: 100%;
+    background-image: linear-gradient(120deg, #44eec3c7, #f1199ec5);
+    background-color: #333;
+    opacity: .7;
+}
+
+.banner::before {
+    transform: skew(-15deg) translateX(-50%);
+}
+
+.banner {
+    overflow: hidden;
+}
+
+.banner>* {
+    z-index: 100;
+}
+
+.banner {
+    position: relative;
+    min-height: 100vh;
+    background-image: url("../images/back.jpg");
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    margin: auto;
+}
+
+.container__loguin {
+    height: 50vh;
+    width: 90%;
+    margin: 2em auto;
+    border-radius: 2px;
+}
+
+.container__signup {
+    height: auto;
+    width: 90%;
+    margin: 1em auto;
+    margin-bottom: 4em;
+    border-radius: 10px;
+}
+
+form {
+    height: 100%;
+    width: 100%;
+    padding: 1em 0 1em;
+    background-color: var(--bg-light70);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.form__input {
+    width: 70%;
+    height: 2em;
+    margin: 1em 0 1em 0;
+    padding-left: 5px;
+    border: 0px;
+}
+
+.form__input:focus {
+    outline: none;
+}
+
+.btn {
+    width: 30%;
+    height: 2em;
+    margin-top: 0.5em;
+    border: 0px;
+    background-color: rgb(42, 188, 233);
+    color: var(--bg-black);
+    font-weight: bold;
+    border-radius: 2px;
+}
+
+.btn:hover {
+    cursor: pointer;
+}
+
+.navbar {
+    width: 100%;
+    height: 10vh;
+    padding: 0 5px 0;
+    background-color: var(--bg-black);
+    color: var(--bg-light);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: var(--bg-light);
+}
+
+.pro {
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.footer {
+    width: 100%;
+    height: 6vh;
+    background-color: var(--bg-black);
+    color: var(--bg-light);
+    position: absolute;
+    bottom: 0;
+}
+
+@media screen and (min-width: 500px) {
+    .container__signup,
+    .container__loguin {
+        width: 70%;
+    }
+}
+
+@media screen and (min-width: 700px) {
+    .container__signup,
+    .container__loguin {
+        width: 50%;
+    }
+}
